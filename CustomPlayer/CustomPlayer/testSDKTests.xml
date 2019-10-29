@@ -1,0 +1,29 @@
+<sheet root_score="10">
+<start box_title="" box_modify="" box_show="">
+<attention label="注意事项" length="1" must="1" type="textedit">099999999999999</attention>
+<planbegin label="计划开始时间" length="3" type="datetime"/>
+<describe label="工单描述" length="1" must="1" type="textedit"/>
+<code label="编号" readonly="y" must="2" type="textedit"/>
+<lastcode label="上个工单编号" type="textview"/>
+<targetplace label="目的地" length="1" must="2" type="textedit"/>
+<date label="发起日期" readonly="y1" must="2" type="datetime"/>
+<planend label="计划截止时间" length="1" must="2" type="datetime"/>
+<sender label="发起人" readonly="y" must="2" type="textedit"/>
+<job label="发起岗位" length="0" defaults="测试岗位1,测试岗位2" must="2" type="selector"/>
+</start>
+<end box_title="" box_modify="" box_show="">
+<score min="0" defaults="100" label="工单评分" must="2" type="number" max="100"/>
+<comment label="评价内容" length="1" type="textedit"/>
+</end>
+<fj box_title="" box_modify="" box_show="">
+<zp3 label="照片或视频" amount="3" type="media"/>
+<zp1 label="照片" length="1" amount="2" type="media"/>
+<dtgj label="轨迹" length="2" type="mapview"/>
+<jwd2 label="当前位置" type="textedit" location="2"/>
+<dtwz label="定位" length="1" type="mapview"/>
+<sfwc label="是否完成" type="bool"/>
+<zp2 label="视频" length="2" amount="2" type="media"/>
+<jwd1 label="经纬度" type="textedit" location="1"/>
+<jtnr label="具体内容" length="1" type="button"/>
+</fj>
+</sheet>
